@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS to define font families and a clean, light background */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Lighter background */
+    color: #334155; /* Slate gray text */
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Reverted custom font for the logo to Oswald */
+.font-logo {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Smooth scroll for navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation class for fade-in effect */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom styles moved from inline to prevent CSP violations */
+.logo-smoke {
+    color: #2a2a2a;
+}
+
+.hero-section {
+    background-color: #2a2a2a;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.hero-bg {
+    background-color: #2a2a2a;
+}
+
+.hero-glow {
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.03) 0%, transparent 70%);
+}
+
+.hero-title {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1);
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    line-height: 1.6;
+}
+
+.hero-button {
+    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+    border: 1px solid rgba(255,255,255,0.1);
+}

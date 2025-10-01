@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmokeSim — Smoke Control CFD Consultants | Fire Dynamics & Regulatory Support</title>
+    <meta name="description" content="SmokeSim is a UK fire‑engineering consultancy specialising in smoke control CFD using NIST FDS. We deliver performance‑based designs, regulatory support (ADB, BS 9999/9991, BS 7346) and clear technical reports for architects, developers and contractors.">
+    <meta name="keywords" content="SmokeSim, smoke control, CFD, FDS, fire dynamics simulator, fire safety, building regulations, UK consultancy, BS 9999, BS 9991, ADB">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="SmokeSim — Smoke Control CFD Consultants | Fire Dynamics & Regulatory Support">
+    <meta property="og:description" content="SmokeSim is a UK fire‑engineering consultancy specialising in smoke control CFD using NIST FDS. We deliver performance‑based designs, regulatory support and regulator‑ready reports.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.smokesim.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="smokesim_logo.png">
+    
+    <!-- Google Fonts: Inter, Poppins, and Oswald for the logo. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS - Local Production Build -->
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="text-gray-700">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <!-- Updated logo with the new font-logo class pointing to Oswald -->
+            <a href="#" class="text-2xl font-bold uppercase tracking-wider font-logo">
+                <span class="logo-smoke">SMOKE</span><span class="text-orange-600">SIM</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#cfd" class="text-sm font-medium text-gray-700 hover:text-orange-600 transition-colors">What is CFD?</a>
+                <a href="#services" class="text-sm font-medium text-gray-700 hover:text-orange-600 transition-colors">Services</a>
+                <a href="#expertise" class="text-sm font-medium text-gray-700 hover:text-orange-600 transition-colors">Expertise</a>
+                <a href="#why-choose" class="text-sm font-medium text-gray-700 hover:text-orange-600 transition-colors">Why Us?</a>
+                <a href="#contact" class="inline-block px-4 py-2 text-sm font-semibold bg-orange-600 text-white rounded-full shadow-lg hover:bg-orange-700 transition-colors transform hover:scale-105">Request a Proposal</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section with Polished Dark Background -->
+        <section class="relative hero-section">
+            <div class="relative w-full h-[450px] sm:h-[480px] md:h-[500px] hero-bg">
+                <!-- Subtle inner glow for depth -->
+                <div class="absolute inset-0 hero-glow"></div>
+                <!-- Dark charcoal grey background with subtle lighting effects -->
+            </div>
+            
+            <!-- Main Hero Content -->
+            <div class="absolute inset-0 flex items-center justify-center text-center">
+                <div class="relative z-10 container mx-auto px-4 sm:px-6 text-white fade-in-section">
+                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-4 sm:mb-6 md:mb-8 hero-title">
+                        Expert Smoke Simulation CFD for Fire Safety Design
+                    </h1>
+                    <p class="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto mb-6 sm:mb-8 md:mb-10 opacity-90 hero-subtitle">
+                        UK smoke simulation specialists translating advanced CFD (FDS) into practical, approved design solutions — from concept modelling to regulatory submission and contractor‑ready design input.
+                    </p>
+                    <a href="#contact" class="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold bg-orange-600 text-white rounded-full shadow-xl hover:bg-orange-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hero-button">
+                        Request a Proposal
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is CFD Section -->
+        <section id="cfd" class="py-24 bg-gray-100 text-center fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-700">What is CFD?</h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-700">
+                    Computational Fluid Dynamics (CFD) uses numerical methods to model fluid flow, heat transfer and combustion. At SmokeSim we apply NIST's <strong class="text-gray-700">Fire Dynamics Simulator (FDS)</strong> using validated modelling protocols and sensitivity analysis. Typical outputs include visibility and temperature predictions, time‑to‑tenability, detailed visualisations, model files and a regulator‑ready technical report with design recommendations and uncertainty notes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="py-24 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-700">Our Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1: Smoke Control CFD -->
+                    <div class="group bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Smoke Control CFD Simulations</h3>
+                                <p class="text-gray-700 text-sm">Advanced fire dynamics modelling with NIST FDS — scenario simulation, design validation and model files for regulatory submission.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2: Regulatory Compliance -->
+                    <div class="group bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Design Support & Compliance</h3>
+                                <p class="text-gray-700 text-sm">Performance‑based design advice and compliance analysis for Approved Document B, BS 9999, BS 9991 and UK SCA guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3: Emergency Ventilation -->
+                    <div class="group bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Emergency Smoke Ventilation</h3>
+                                <p class="text-gray-700 text-sm">Natural and mechanical smoke ventilation design and performance testing with quantified tenability and extraction rates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 4: Car Park Ventilation -->
+                    <div class="group bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Car Park Ventilation</h3>
+                                <p class="text-gray-700 text-sm">Fire and pollutant dispersion modelling for car park environments aligned to BS 7346-7; includes system sizing and control strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 5: Stair, Lobby & Atrium Analysis -->
+                    <div class="group bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Stair, Lobby & Atrium Analysis</h3>
+                                <p class="text-gray-700 text-sm">Detailed tenability and evacuation studies for complex vertical and open spaces, with guidance for firefighting operations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 6: Basement Ventilation -->
+                    <div class="group bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Basement Ventilation</h3>
+                                <p class="text-gray-700 text-sm">Specialist below‑ground smoke extraction design and integration recommendations with suppression and detection systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Expertise Section -->
+        <section id="expertise" class="py-24 bg-gray-100 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-700">Our Expertise</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group bg-white rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-gray-50 text-orange-600/90" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Design for Unique Architecture</h3>
+                                <p class="text-gray-700 text-sm">Bespoke smoke ventilation design and advanced modelling for non-standard and challenging building geometries. Validated workflows and sensitivity analysis underpin our approach.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-gray-50 text-orange-600/90" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Smoke Ventilation Engineering</h3>
+                                <p class="text-gray-700 text-sm">We provide performance‑based fire safety design solutions, ensuring effective smoke ventilation systems and demonstrable, quantifiable outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-gray-50 text-orange-600/90" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">CFD Analysis</h3>
+                                <p class="text-gray-700 text-sm">Our expertise centres on FDS-based CFD for accurate, validated fire modelling, with transparent assumptions and uncertainty reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-gray-50 text-orange-600/90" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Building Regulations</h3>
+                                <p class="text-gray-700 text-sm">In‑depth knowledge of UK building regulations, including Approved Document B, underpins our practical, regulator-focused advice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-gray-50 text-orange-600/90" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">British Standards</h3>
+                                <p class="text-gray-700 text-sm">We ensure compliance with key British Standards, such as BS 7346, BS 9999, and BS 9991, in all our designs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 rounded-lg bg-gray-50 text-orange-600/90" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Design Validation</h3>
+                                <p class="text-gray-700 text-sm">We provide 3D visualisations, animations and post‑processing tailored for Authority Having Jurisdiction (AHJ) review and client sign-off.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose SmokeSim Section -->
+        <section id="why-choose" class="py-24 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-700">Why Choose SmokeSim?</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-center">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Advanced Analysis</h3>
+                                <p class="text-gray-700 text-sm">Advanced, validated CFD analysis with transparent assumptions, sensitivity checks and uncertainty reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-center">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Clear, Tailored Reports</h3>
+                                <p class="text-gray-700 text-sm">Clear, regulator-ready reports and animations, formatted for buiding control and fire authority review.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-center">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Collaborative Approach</h3>
+                                <p class="text-gray-700 text-sm">Close coordination with architects, MEP and fire engineers to integrate solutions into the design and construction process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-xl p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl text-center">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="p-2 rounded-lg bg-white/60 text-orange-600" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-700 mb-2">Commitment to Quality</h3>
+                                <p class="text-gray-700 text-sm">Internal QA processes and traceable model documentation to ensure robust, defensible results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action & Contact Section -->
+        <section id="contact" class="py-24 bg-gray-100 text-center fade-in-section">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-700">Ready to Start Your Project?</h2>
+                <p class="text-lg mb-8 text-gray-700">
+                    Email us a short brief (building type, drawings, proposed fire scenarios and deadlines). We’ll review and respond with a scoped proposal outlining scope, deliverables and a fee estimate.
+                </p>
+                <a href="mailto:hello@smokesim.com" class="inline-block px-10 py-4 text-lg font-semibold bg-orange-600 text-white rounded-full shadow-lg hover:bg-orange-700 transition-all duration-300 transform hover:-translate-y-1">
+                    Request a Proposal
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center bg-white text-gray-700 shadow-inner">
+        <div class="container mx-auto px-6">
+            <p class="mb-2">&copy; <strong>SmokeSim®</strong>. All rights reserved.</p>
+            <a href="mailto:hello@smokesim.com" class="text-sm hover:text-orange-600 transition-colors">hello@smokesim.com</a>
+            <p class="text-xs text-gray-500 mt-2">Privacy & data: we treat project information confidentially. For details, contact hello@smokesim.com.</p>
+        </div>
+    </footer>
+    
+    <!-- External JavaScript -->
+    <script src="./src/main.js"></script>
+</body>
+</html>

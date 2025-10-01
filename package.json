@@ -1,0 +1,19 @@
+{
+  "name": "smokesim-website",
+  "version": "1.0.0",
+  "description": "SmokeSim - Smoke Control CFD Consultants Website",
+  "main": "main.html",
+  "scripts": {
+    "build-css": ".\\tailwindcss.exe -i ./src/input.css -o ./dist/output.css",
+    "build-css-watch": ".\\tailwindcss.exe -i ./src/input.css -o ./dist/output.css --watch",
+    "build-css-minify": ".\\tailwindcss.exe -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "keywords": [
+    "smokesim",
+    "cfd",
+    "fire-safety",
+    "smoke-control"
+  ],
+  "author": "SmokeSim",
+  "license": "ISC"
+}
