@@ -1,0 +1,12 @@
+# Cloudflare Pages Redirects Configuration
+# https://developers.cloudflare.com/pages/platform/redirects/
+
+# Force HTTPS (Cloudflare handles this automatically, but explicit is better)
+http://smokesim.co.uk/* https://smokesim.co.uk/:splat 301!
+http://www.smokesim.co.uk/* https://smokesim.co.uk/:splat 301!
+
+# Redirect www to non-www  
+https://www.smokesim.co.uk/* https://smokesim.co.uk/:splat 301!
+
+# SPA fallback - serve index.html for client-side routing
+/* /index.html 200

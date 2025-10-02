@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Prioritize key pages for smoke control CFD
-Sitemap: https://cullengineering.github.io/smokesim_website/sitemap.xml
+Sitemap: https://smokesim.co.uk/sitemap.xml
 
 # Block admin and development files
 Disallow: /admin/
