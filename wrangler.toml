@@ -1,13 +1,8 @@
-# Cloudflare Wrangler Configuration
+# Cloudflare Wrangler Configuration for Pages
 name = "smokesim-website"
 
 # Required for Cloudflare Pages
 pages_build_output_dir = "dist"
-
-# Build configuration (optional - usually handled by GitHub Actions)
-[build]
-command = "npm run build"
-cwd = "."
 
 # Environment variables for build
 [vars]
