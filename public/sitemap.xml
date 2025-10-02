@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main page - highest priority for smoke control CFD keywords -->
+  <url>
+    <loc>https://cullengineering.github.io/smokesim_website/</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cullengineering.github.io/smokesim_website/smokesim_logo.png</image:loc>
+      <image:title>SmokeSim - Smoke Control CFD Simulation Experts</image:title>
+      <image:caption>Leading UK smoke control CFD simulation consultancy using NIST FDS for fire dynamics modeling</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://cullengineering.github.io/smokesim_website/" />
+  </url>
+  
+  <!-- CFD Services Section -->
+  <url>
+    <loc>https://cullengineering.github.io/smokesim_website/#cfd</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://cullengineering.github.io/smokesim_website/#services</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Expertise Section -->
+  <url>
+    <loc>https://cullengineering.github.io/smokesim_website/#expertise</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Why Choose Section -->
+  <url>
+    <loc>https://cullengineering.github.io/smokesim_website/#why-choose</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://cullengineering.github.io/smokesim_website/#contact</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

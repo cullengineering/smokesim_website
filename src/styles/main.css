@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for consistent theming */
+:root {
+  --color-primary: theme('colors.primary.600');
+  --color-primary-hover: theme('colors.primary.700');
+  --color-text: theme('colors.gray.700');
+  --color-text-light: theme('colors.gray.500');
+  --color-bg: theme('colors.gray.50');
+  --color-surface: theme('colors.white');
+  --shadow-sm: theme('boxShadow.sm');
+  --shadow-lg: theme('boxShadow.lg');
+  --border-radius: theme('borderRadius.xl');
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base styles using modern CSS features */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: 'liga' 1, 'kern' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-variant-numeric: oldstyle-nums;
+}
+
+/* Modern focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Logo font */
+.font-logo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Component styles using modern CSS */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus-visible:ring-primary-500 transform hover:scale-105 active:scale-95;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105;
+  }
+  
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Animation utilities */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .will-change-transform {
+    will-change: transform;
+  }
+}
+
+/* Intersection Observer animations */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero section with modern gradients */
+.hero-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-title {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1);
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  line-height: 1.6;
+}
+
+/* Logo color scheme */
+.logo-smoke {
+  color: #2a2a2a;
+}
+
+/* Modern glass morphism effect for header */
+.glass-header {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Improved responsive design with container queries */
+@container (min-width: 768px) {
+  .card {
+    @apply p-8;
+  }
+  
+  .service-card {
+    min-height: 200px;
+  }
+}
+
+/* Modern CSS Grid and Flexbox improvements */
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Enhanced focus states for better accessibility */
+.keyboard-navigation *:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Modern scroll snap for smooth section navigation */
+.scroll-snap-section {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-snap-section > section {
+  scroll-snap-align: start;
+}
+
+/* Enhanced header states */
+.glass-header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+/* Service card enhancements */
+.service-card.card-hovered {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-card.card-focused {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(234, 88, 12, 0.2);
+}
+
+/* Modern dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: theme('colors.gray.900');
+    --color-surface: theme('colors.gray.800');
+    --color-text: theme('colors.gray.100');
+    --color-text-light: theme('colors.gray.400');
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 2px solid currentColor;
+  }
+  
+  .card {
+    border: 1px solid var(--color-text);
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
