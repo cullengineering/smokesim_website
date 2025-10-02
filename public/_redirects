@@ -1,12 +1,9 @@
 # Cloudflare Pages Redirects Configuration
 # https://developers.cloudflare.com/pages/platform/redirects/
 
-# Force HTTPS (Cloudflare handles this automatically, but explicit is better)
-http://smokesim.co.uk/* https://smokesim.co.uk/:splat 301!
-http://www.smokesim.co.uk/* https://smokesim.co.uk/:splat 301!
-
-# Redirect www to non-www  
-https://www.smokesim.co.uk/* https://smokesim.co.uk/:splat 301!
+# Note: Domain-level redirects (www to non-www, HTTP to HTTPS) 
+# are handled by Cloudflare's DNS/domain settings, not _redirects
 
 # SPA fallback - serve index.html for client-side routing
+# This should be the last rule to catch all unmatched routes
 /* /index.html 200

@@ -1,8 +1,7 @@
 # Cloudflare Wrangler Configuration
 name = "smokesim-website"
 
-# Cloudflare Pages configuration
-[env.production]
+# Required for Cloudflare Pages
 pages_build_output_dir = "dist"
 
 # Build configuration (optional - usually handled by GitHub Actions)
@@ -11,12 +10,8 @@ command = "npm run build"
 cwd = "."
 
 # Environment variables for build
-[env.production.vars]
+[vars]
 NODE_ENV = "production"
 
 # Compatibility settings (use latest date)
 compatibility_date = "2024-10-02"
-compatibility_flags = ["nodejs_compat"]
-
-# Custom domain configuration (managed via Cloudflare Dashboard)
-# Domain: smokesim.co.uk
