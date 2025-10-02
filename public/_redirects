@@ -6,4 +6,5 @@
 
 # SPA fallback - serve index.html for client-side routing
 # This should be the last rule to catch all unmatched routes
-/* /index.html 200
+/404 /index.html 200
+/api/* /api/:splat 200
