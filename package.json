@@ -20,19 +20,19 @@
   "author": "SmokeSim",
   "license": "ISC",
   "dependencies": {
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
   },
   "devDependencies": {
     "@types/node": "^20.8.0",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
-    "autoprefixer": "^10.4.16",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-html": "^7.1.0",
-    "postcss": "^8.4.31",
     "prettier": "^3.0.3",
-    "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2",
     "vite-plugin-html": "^3.2.0"
   }
