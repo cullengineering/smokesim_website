@@ -46,7 +46,7 @@ if ('serviceWorker' in navigator) {
     // Ensure scroll to top after everything loads
     window.scrollTo(0, 0)
     
-    navigator.serviceWorker.register('/smokesim_website/sw.js')
+    navigator.serviceWorker.register('/sw.js')
       .then((registration) => {
         console.log('SW registered: ', registration)
       })
