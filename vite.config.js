@@ -3,7 +3,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   root: '.',
-  base: '/smokesim_website/', // GitHub Pages repository name
+  base: '/', // Custom domain - use root path
   server: {
     port: 3000,
     open: true
