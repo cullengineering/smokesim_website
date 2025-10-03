@@ -46,3 +46,8 @@
 # Prevent pages.dev URLs from being indexed
 https://*.pages.dev/*
   X-Robots-Tag: noindex
+
+# robots.txt - ensure proper content type and no extra content
+/robots.txt
+  Content-Type: text/plain
+  Cache-Control: public, max-age=3600
