@@ -7,7 +7,6 @@ Sitemap: https://smokesim.co.uk/sitemap.xml
 # Block admin and development files
 Disallow: /admin/
 Disallow: /dev/
-Disallow: /*.json$
 Disallow: /*_test.html
 Disallow: /src/
 
