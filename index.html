@@ -34,25 +34,8 @@
     <meta name="rating" content="General">
     
     <!-- Additional SEO Enhancement Meta Tags -->
-    <meta name="revisit-after" content="7 days">
-    <meta name="category" content="Fire Safety Engineering, CFD Simulation, Building Design">
     <meta name="subject" content="Smoke Control CFD Simulation and Fire Dynamics Modeling">
-    <meta name="topic" content="Fire Safety Engineering CFD Services">
-    <meta name="summary" content="Professional smoke control CFD simulation using NIST FDS for fire dynamics modeling, smoke ventilation design, and building regulations compliance">
-    <meta name="Classification" content="Business">
-    <meta name="designer" content="SmokeSim CFD Specialists">
     <meta name="reply-to" content="support@smokesim.com">
-    <meta name="owner" content="SmokeSim">
-    <meta name="url" content="https://smokesim.co.uk/">
-    <meta name="identifier-URL" content="https://smokesim.co.uk/">
-    <meta name="directory" content="submission">
-    <meta name="pagename" content="SmokeSim - Smoke Control CFD Simulation Experts">
-    <meta name="category" content="Professional Services, Engineering Consultancy">
-    <meta name="coverage" content="United Kingdom, Europe, Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="rating" content="General">
-    <meta name="revisit-after" content="7 days">
-    <meta name="subtitle" content="Leading UK Smoke Control CFD Simulation Consultancy">
     
     <!-- Industry-Specific Keywords -->
     <meta name="industry" content="Fire Safety Engineering, Building Design, MEP Engineering">
@@ -103,12 +86,13 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
+          "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
           "@id": "https://smokesim.co.uk/#organization",
           "name": "SmokeSim",
           "alternateName": "SmokeSim CFD Consultancy",
+          "legalName": "Cull Engineering Ltd",
           "description": "Leading UK smoke control CFD simulation consultancy specializing in fire dynamics modeling using NIST FDS",
-          "url": "https://cullengineering.github.io/smokesim_website/",
+          "url": "https://smokesim.co.uk/",
           "logo": {
             "@type": "ImageObject",
             "url": "https://smokesim.co.uk/smokesim_logo.png",
@@ -124,8 +108,16 @@
           },
           "address": {
             "@type": "PostalAddress",
-            "addressCountry": "GB",
-            "addressRegion": "United Kingdom"
+            "streetAddress": "17 Wellfield",
+            "addressLocality": "Tewkesbury",
+            "addressRegion": "Gloucestershire",
+            "postalCode": "GL20 8BY",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.9923",
+            "longitude": "-2.1583"
           },
           "areaServed": {
             "@type": "Country",
@@ -178,11 +170,11 @@
         {
           "@type": "WebSite",
           "@id": "https://smokesim.co.uk/#website",
-          "url": "https://cullengineering.github.io/smokesim_website/",
+          "url": "https://smokesim.co.uk/",
           "name": "SmokeSim - Smoke Control CFD Simulation Experts",
           "description": "Leading UK smoke control CFD simulation consultancy using NIST FDS for fire dynamics modeling",
           "publisher": {
-            "@id": "https://cullengineering.github.io/smokesim_website/#organization"
+            "@id": "https://smokesim.co.uk/#organization"
           },
           "inLanguage": "en-GB",
           "potentialAction": {
@@ -198,10 +190,10 @@
           "name": "Smoke Control CFD Simulation | Fire Dynamics Simulator (FDS) Experts",
           "description": "Leading UK smoke control CFD simulation consultancy using NIST FDS. Expert fire dynamics modeling, smoke ventilation design, building regulations compliance.",
           "isPartOf": {
-            "@id": "https://cullengineering.github.io/smokesim_website/#website"
+            "@id": "https://smokesim.co.uk/#website"
           },
           "about": {
-            "@id": "https://cullengineering.github.io/smokesim_website/#organization"
+            "@id": "https://smokesim.co.uk/#organization"
           },
           "primaryImageOfPage": {
             "@type": "ImageObject",
@@ -216,18 +208,18 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://cullengineering.github.io/smokesim_website/"
+                "item": "https://smokesim.co.uk/"
               }
             ]
           }
         },
         {
           "@type": "ProfessionalService",
-          "@id": "https://cullengineering.github.io/smokesim_website/#service",
+          "@id": "https://smokesim.co.uk/#service",
           "name": "Smoke Control CFD Simulation Services",
           "description": "Professional smoke control CFD simulation and fire dynamics modeling using NIST FDS",
           "provider": {
-            "@id": "https://cullengineering.github.io/smokesim_website/#organization"
+            "@id": "https://smokesim.co.uk/#organization"
           },
           "areaServed": {
             "@type": "Country",
@@ -337,7 +329,7 @@
         <section class="relative hero-section" aria-labelledby="hero-title">
             <div class="relative w-full h-[450px] sm:h-[480px] md:h-[500px] hero-bg">
                 <!-- Hero Background Image -->
-                <img src="./src/assets/hero_image.png" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+                <img src="./src/assets/hero_image.png" alt="Smoke control CFD simulation visualization showing fire dynamics and smoke movement in building" class="absolute inset-0 w-full h-full object-cover">
                 <!-- Dark overlay for text readability -->
                 <div class="absolute inset-0 bg-black/50" aria-hidden="true"></div>
             </div>
