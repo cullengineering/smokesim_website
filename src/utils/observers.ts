@@ -26,7 +26,7 @@ export class IntersectionObserverManager {
   }
 
   private observeElements(): void {
-    const elements = document.querySelectorAll('.fade-in-section')
+    const elements = document.querySelectorAll('.fade-in-section, .hero-image-fade')
     elements.forEach(element => {
       if (this.observer) {
         this.observer.observe(element)
@@ -48,7 +48,7 @@ export class IntersectionObserverManager {
 
   private fallbackAnimation(): void {
     // Simple fallback for browsers without IntersectionObserver
-    const elements = document.querySelectorAll('.fade-in-section')
+    const elements = document.querySelectorAll('.fade-in-section, .hero-image-fade')
     elements.forEach(element => {
       element.classList.add('is-visible')
     })
