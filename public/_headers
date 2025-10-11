@@ -51,3 +51,8 @@ https://*.pages.dev/*
 /robots.txt
   Content-Type: text/plain
   Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex
+
+# Main page - ensure it's properly indexed
+/
+  X-Robots-Tag: index, follow
