@@ -8,6 +8,9 @@ Sitemap: https://smokesim.co.uk/sitemap.xml
 Disallow: /admin/
 Disallow: /dev/
 Disallow: /*_test.html
+Disallow: /404
+Disallow: /api/
+Disallow: /src/
 
 # Allow important resources
 Allow: /assets/

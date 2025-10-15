@@ -4,7 +4,17 @@
 # Note: Domain-level redirects (www to non-www, HTTP to HTTPS) 
 # are handled by Cloudflare's DNS/domain settings, not _redirects
 
-# SPA fallback - serve index.html for client-side routing
+# Redirect hash fragments to main page to prevent duplicate indexing
+/#cfd / 301
+/#services / 301
+/#expertise / 301
+/#why-choose / 301
+/#contact / 301
+
+# Block problematic URLs from being indexed
+/404 / 301
+/api/* / 301
+
+# SPA fallback - serve index.html for client-side routing  
 # This should be the last rule to catch all unmatched routes
-/404 /index.html 200
-/api/* /api/:splat 200
+/* /index.html 200
