@@ -11,6 +11,7 @@ Disallow: /*_test.html
 Disallow: /404
 Disallow: /api/
 Disallow: /src/
+Disallow: /#*
 
 # Allow important resources
 Allow: /assets/
