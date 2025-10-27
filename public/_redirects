@@ -4,10 +4,6 @@
 # Note: Domain-level redirects (www to non-www, HTTP to HTTPS) 
 # are handled by Cloudflare's DNS/domain settings, not _redirects
 
-# Block problematic URLs from being indexed (but don't redirect to avoid loops)
-/404 /index.html 200
-/api/* /index.html 200
-
 # SPA fallback - serve index.html for client-side routing  
 # This should be the last rule to catch all unmatched routes
 /* /index.html 200
